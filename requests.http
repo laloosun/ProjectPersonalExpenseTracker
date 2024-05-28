@@ -1,0 +1,63 @@
+### Create Income
+POST http://localhost:8080/api/income
+Content-Type: application/json
+
+{
+  "amount": 1000,
+  "description": "Salary"
+}
+
+###
+
+### Get All Incomes
+GET http://localhost:8080/api/income
+
+###
+
+### Update Income
+PUT http://localhost:8080/api/income/{id}
+Content-Type: application/json
+
+{
+  "amount": 1200,
+  "description": "Updated Salary"
+}
+
+###
+
+### Delete Income
+DELETE http://localhost:8080/api/income/{id}
+
+###
+
+### Create Expense
+POST http://localhost:8080/api/expense
+Content-Type: application/json
+
+{
+  "amount": 200,
+  "description": "Groceries",
+  "category": "Food"
+}
+
+###
+
+### Get All Expenses
+GET http://localhost:8080/api/expense
+
+###
+
+### Update Expense
+PUT http://localhost:8080/api/expense/{id}
+Content-Type: application/json
+
+{
+  "amount": 250,
+  "description": "Updated Groceries",
+  "category": "Food"
+}
+
+###
+
+### Delete Expense
+DELETE http://localhost:8080/api/expense/{id}
